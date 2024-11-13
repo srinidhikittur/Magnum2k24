@@ -530,6 +530,27 @@ body{
             opacity: 1;
             transform: translateX(0);
         }
+        .download{
+            background-color: #00ff00;
+            padding:6px;
+            border-radius: 4px;
+        }
+        .download img{
+            width:25px;
+            height: 25px;
+        }
+        .download a:hover{
+            color: #000;
+        }
+        .scale-in {
+            opacity: 0;
+            transform: scale(0.9);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        }
+        .scale-in.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
     </style>
 </head>
 <body>
@@ -546,6 +567,7 @@ body{
                 <li><a href="#about">About</a></li>
                 <li><a href="#events">Events</a></li>
                 <li><a href="#organizers">Organizers</a></li>
+                <li class="download"><a href="piyush.jpeg" download><img src="download_icon.svg" alt="">Brochure</a></li>
             </ul>
             <div class="hamburger">
                 <div></div>
@@ -556,13 +578,13 @@ body{
 
         <main>
             
-            <div class="main-content">
+            <div class="main-content scroll-animate">
                 <p><small>Karnatak Law Society's</small></p>
                 <p><strong>Gogte College of Commerce</strong></p>
                 <p><strong>Bachelor of Computer Applications</strong></p>
                 <p>Presents</p>
             </div>
-            <div class="magnum">
+            <div class="magnum scroll-animate">
                 <h1>MAGNUM</h1>
                 <p><em>Where Brilliance meets Innovation</em></p>
             </div>
@@ -570,7 +592,7 @@ body{
     </div>
 
     <div class="about-container">
-    <div class="about" id="about">
+    <div class="about scroll-animate" id="about">
         <h1>About Magnum</h1>
         <p style="text-align: center;"> Magnum is an annual event that brings together talent from various domains to
             showcase skills, foster collaboration, and create memorable experiences in the world of technology, creativity,
@@ -578,7 +600,7 @@ body{
     </div>
     <br>
     <br>
-    <div class="about" id="inauguration">
+    <div class="about scroll-animate" id="inauguration">
         <h1>Inauguration</h1>
         <p style="text-align: center;"> The inauguration ceremony marks the official start of Magnum, featuring guest speakers,
         performances, and an introduction to the events and opportunities that await participants.</p>
@@ -588,7 +610,7 @@ body{
 <br>
 <br>
 <br>
-    <h1 style="text-align: center;color: #f0f6f0;font-size:4rem;">Events</h1>
+    <h1 class="scroll-animate" style="text-align: center;color: #f0f6f0;font-size:4rem;">Events</h1>
     <div class="event-container" id="events">
         <div class="container scroll-animate">
             <div class="event" >
@@ -645,7 +667,7 @@ body{
             </div>
             <div class="event-des">
                 <h1>Cine Gala</h1>
-                <p>REEL life , Real Fashion</p>
+                <p>"REEL life , Real Fashion</p>
                 <p>"Cine Gaala" is an immersive icebreaker experience combining glamour, creativity and entertainment, 
                     inspired by Bollywood  iconic films.</p>
                 <button><a href="group.html">More Info</a></button>    
@@ -658,7 +680,7 @@ body{
             </div>
             <div class="event-des">
                 <h1>Analytic Odyssey</h1>
-                <p>Insights from data, journey to success!/p>
+                <p>"Insights from data, journey to success!</p>
                 <p>Analytic Odyssey" means a journey or expedition that is centered around data analysis. The term "Analytic"
                      refers to the process of examining and interpreting data, while "Odyssey" signifies a long and challenging
                       journey. Using this name suggests that you are embarking on an exciting and exploratory journey to 
@@ -851,7 +873,7 @@ body{
             </div>
         </div>
 
-        <!-- <div class="head scroll-animate">
+        <div class="head scroll-animate">
             <div class="photo">
                 <img src="gourav.jpeg" alt="Gourav Sapaliga">
             </div>
@@ -869,7 +891,7 @@ body{
                 <h1>Prajkata Choudary</h1>
                 <p>Phone No: 9632587410</p>         
             </div>
-        </div> -->
+        </div>
 
         
     </div>
